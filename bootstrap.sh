@@ -32,10 +32,10 @@ mysql --user=root --execute="ALTER USER 'root'@'localhost'
              BY '';
 "
 
+# https://wordpress.org/support/article/how-to-install-wordpress/#step-2-create-the-database-and-a-user
 # https://dev.mysql.com/doc/refman/8.0/en/create-database.html
 # https://dev.mysql.com/doc/refman/8.0/en/create-user.html
 # https://dev.mysql.com/doc/refman/8.0/en/grant.html
-# https://wordpress.org/support/article/how-to-install-wordpress/#step-2-create-the-database-and-a-user
 mysql --user=root --execute="CREATE DATABASE wordpress;
 CREATE USER 'wordpress'@'localhost' IDENTIFIED BY '';
 GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
