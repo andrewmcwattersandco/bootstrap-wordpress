@@ -20,6 +20,7 @@ sudo apt-get -y install \
 sudo apt-get -y install sendmail
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#detailed-instructions
+# https://wordpress.org/support/article/how-to-install-wordpress/#step-1-download-and-extract
 wget https://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
 mv /var/www/html/index.html /var/www/html/index.html~
