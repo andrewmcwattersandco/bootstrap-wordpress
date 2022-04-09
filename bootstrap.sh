@@ -22,17 +22,17 @@ sudo apt-get -y install sendmail
 # https://wordpress.org/support/article/how-to-install-wordpress/#detailed-instructions
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-1-download-and-extract
 wget https://wordpress.org/latest.tar.gz
-tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
-mv /var/www/html/index.html /var/www/html/index.html~
+sudo tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
+sudo mv /var/www/html/index.html /var/www/html/index.html~
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-2-create-the-database-and-a-user
 # https://dev.mysql.com/doc/refman/8.0/en/create-database.html
 # https://dev.mysql.com/doc/refman/8.0/en/create-user.html
 # https://dev.mysql.com/doc/refman/8.0/en/grant.html
-mysql --user=root --execute="CREATE DATABASE wordpress;
+sudo mysql --user=root --execute="CREATE DATABASE wordpress;
 CREATE USER 'wordpress'@'localhost' IDENTIFIED BY '';
 GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
 "
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-3-set-up-wp-config-php
-chown www-data /var/www/html
+sudo chown www-data /var/www/html
