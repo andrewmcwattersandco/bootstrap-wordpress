@@ -3,11 +3,19 @@
 sudo apt-get update
 
 # https://wordpress.org/download/#download-install
+
+# php-mysql:
+# "Your PHP installation appears to be missing the MySQL extension which is
+# required by WordPress."
+
 sudo apt-get -y install \
   php \
   mysql-server \
   apache2 \
   php-mysql
+
+# sendmail:
+# "Your site may not be correctly configured to send emails."
 
 # https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) fqdn hostname
