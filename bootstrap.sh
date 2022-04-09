@@ -39,3 +39,6 @@ mysql --user=root --execute="CREATE DATABASE wordpress;
 CREATE USER 'wordpress'@'localhost' IDENTIFIED BY '';
 GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
 "
+
+# https://wordpress.org/support/article/how-to-install-wordpress/#step-3-set-up-wp-config-php
+chown www-data /var/www/html
