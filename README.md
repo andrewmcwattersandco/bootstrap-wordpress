@@ -1,6 +1,15 @@
 # bootstrap-wordpress
 Provisioning script for Wordpress on Ubuntu
 
+## Provision
+As `root`, run `adduser --ingroup sudo user`.
+
+As `user`, run `bootstrap.sh`.
+
+```sh
+curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-wordpress/v1.0.0/bootstrap.sh | bash
+```
+
 ## License
 MIT License
 
