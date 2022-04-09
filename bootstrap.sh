@@ -6,7 +6,8 @@ sudo apt-get update
 sudo apt-get -y install \
   php \
   mysql-server \
-  apache2
+  apache2 \
+  php-mysql
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#detailed-instructions
 wget https://wordpress.org/latest.tar.gz
