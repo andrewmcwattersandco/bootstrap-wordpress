@@ -9,6 +9,16 @@ sudo apt-get -y install \
   apache2 \
   php-mysql
 
+# https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
+# sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) fqdn hostname
+# 127.0.1.1       thishost.mydomain.org  thishost
+# sudo echo "$(curl https://checkip.amazonaws.com)\tfqdn hostname" >> /etc/hosts
+# or
+# https://github.com/GoogleCloudPlatform/cloud-self-test-kit/blob/master/tracerouter.py#L169
+# sudo echo "$(dig @ns1.google.com o-o.myaddr.l.google.com TXT +short | tr -d \")\tfqdn hostname" >> /etc/hosts
+# TXT Record @ v=spf1 a:thishost.mydomain.org ~all Automatic
+sudo apt-get -y install sendmail
+
 # https://wordpress.org/support/article/how-to-install-wordpress/#detailed-instructions
 wget https://wordpress.org/latest.tar.gz
 tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
