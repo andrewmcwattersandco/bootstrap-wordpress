@@ -1,13 +1,12 @@
 #!/bin/sh
 
-sudo apt-get update
-
 # https://wordpress.org/download/#download-install
 
 # php-mysql:
 # "Your PHP installation appears to be missing the MySQL extension which is
 # required by WordPress."
 
+sudo apt-get update
 sudo apt-get -y install \
   php \
   mysql-server \
