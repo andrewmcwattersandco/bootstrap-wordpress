@@ -33,6 +33,13 @@ wget https://wordpress.org/latest.tar.gz
 sudo tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
 sudo mv /var/www/html/index.html /var/www/html/index.html~
 
+# https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html
+# https://dev.mysql.com/doc/refman/8.0/en/alter-user.html
+# sudo mysql --user=root --execute="ALTER USER 'root'@'localhost'
+#   IDENTIFIED WITH mysql_native_password
+#              BY '';
+# "
+
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-2-create-the-database-and-a-user
 # https://dev.mysql.com/doc/refman/8.0/en/create-database.html
 # https://dev.mysql.com/doc/refman/8.0/en/create-user.html
