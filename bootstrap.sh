@@ -11,7 +11,7 @@ sudo apt-get -y install \
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#detailed-instructions
 wget https://wordpress.org/latest.tar.gz
-tar -xzvf latest.tar.gz
+tar -xzvf latest.tar.gz -C /var/www/html --strip-components=1 # wordpress/
 
 # https://dev.mysql.com/doc/refman/8.0/en/resetting-permissions.html
 # https://dev.mysql.com/doc/refman/8.0/en/alter-user.html
