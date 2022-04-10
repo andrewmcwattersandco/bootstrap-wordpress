@@ -6,15 +6,15 @@
 # "Your PHP installation appears to be missing the MySQL extension which is
 # required by WordPress."
 
+# sendmail:
+# "Your site may not be correctly configured to send emails."
+
 sudo apt-get update
 sudo apt-get -y install \
   php \
   mysql-server \
   apache2 \
   php-mysql
-
-# sendmail:
-# "Your site may not be correctly configured to send emails."
 
 # https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) fqdn hostname
