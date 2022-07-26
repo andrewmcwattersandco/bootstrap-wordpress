@@ -53,5 +53,7 @@ GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
 sudo chown -R www-data /var/www/html
 
 # https://certbot.eff.org/instructions?ws=apache&os=ubuntufocal
-sudo apt-get -y install certbot
+sudo apt-get -y install \
+  certbot \
+  python3-certbot-apache
 # sudo certbot --apache
