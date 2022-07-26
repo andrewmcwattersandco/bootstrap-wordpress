@@ -42,4 +42,4 @@ GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
 "
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-3-set-up-wp-config-php
-sudo chown www-data /var/www/html
+sudo chown -R www-data /var/www/html
