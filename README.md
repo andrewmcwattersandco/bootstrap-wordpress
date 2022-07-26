@@ -15,7 +15,7 @@ As `user`, set your FQDN for sendmail, then run `bootstrap.sh`.
 ```
 
 ```sh
-curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-wordpress/v1.0.0/bootstrap.sh | bash
+curl -o - https://raw.githubusercontent.com/andrewmcwattersandco/bootstrap-wordpress/v1.1.0/bootstrap.sh | bash
 ```
 
 ## License
