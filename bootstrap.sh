@@ -51,3 +51,7 @@ GRANT ALL ON wordpress.* TO 'wordpress'@'localhost';
 
 # https://wordpress.org/support/article/how-to-install-wordpress/#step-3-set-up-wp-config-php
 sudo chown -R www-data /var/www/html
+
+# https://certbot.eff.org/instructions?ws=apache&os=ubuntufocal
+sudo apt-get -y install certbot
+# sudo certbot --apache
