@@ -14,7 +14,8 @@ sudo apt-get -y install \
   php \
   mysql-server \
   apache2 \
-  php-mysql
+  php-mysql \
+  php-gd
 
 # https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) fqdn hostname
