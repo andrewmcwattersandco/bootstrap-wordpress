@@ -9,13 +9,21 @@
 # sendmail:
 # "Your site may not be correctly configured to send emails."
 
+# https://make.wordpress.org/hosting/handbook/server-environment/#php-extensions
+
 sudo apt-get update
 sudo apt-get -y install \
   php \
   mysql-server \
   apache2 \
   php-mysql \
-  php-gd
+  php-gd \
+  php-curl \
+  php-xml \
+  php-imagick \
+  php-mbstring \
+  php-zip \
+  php-intl
 
 # https://man7.org/linux/man-pages/man5/hosts.5.html#EXAMPLES
 # sudo nano /etc/hosts e.g. 198.51.100.0 (public Internet) fqdn hostname
