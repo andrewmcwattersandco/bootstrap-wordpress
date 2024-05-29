@@ -30,7 +30,7 @@ sudo apt-get -y install \
 # 127.0.1.1       thishost.mydomain.org  thishost
 # sudo echo "$(curl https://checkip.amazonaws.com)\tfqdn hostname" >> /etc/hosts
 # or
-# sudo echo "$(dig @ns1.google.com o-o.myaddr.l.google.com TXT +short | tr -d \")\tfqdn hostname" >> /etc/hosts
+# sudo echo "$(dig @ns1.google.com -4 o-o.myaddr.l.google.com TXT +short | tr -d \")\tfqdn hostname" >> /etc/hosts
 # TXT Record @ v=spf1 a:thishost.mydomain.org ~all Automatic
 sudo apt-get -y install sendmail
 
